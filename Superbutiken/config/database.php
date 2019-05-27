@@ -1,4 +1,5 @@
 <?php
+/*
 return [
   'default' => 'mysql',
   'migrations' => 'migrations',
@@ -6,7 +7,7 @@ return [
     'mysql' => [
       'driver' => 'mysql',
       'host' => env('DB_HOST'),
-      //"unix_socket" => '/Appli'
+      //"unix_socket" => ???
       'database' => env('DB_DATABASE'),
       'username' => env('DB_USERNAME'),
       'password' => env('DB_PASSWORD'),
@@ -15,3 +16,4 @@ return [
     ]
   ]
 ];
+*/

@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "laravel/lumen-installer": "^1.1"
+        "laravel/lumen-installer": "^1.1",
+        "palanik/lumen-cors": "dev-master"
     }
 }
