@@ -9,22 +9,54 @@ class ProductStoreTableSeeder extends Seeder {
      * @return void
      */
     public function run() {
-      DB::table('stores')->insert([
+      DB::table('product_store')->insert([
         [
-            "name" => "Elgiganten",
-            "city" => "Lund"
+            "product_id" => 1,
+            "store_id" => 1
         ],
         [
-            "name" => "Media Markt",
-            "city" => "Malmö"
+            "product_id" => 1,
+            "store_id" => 2
         ],
         [
-            "name" => "Expert",
-            "city" => "Staffanstorp"
+            "product_id" => 1,
+            "store_id" => 3
         ],
         [
-            "name" => "Siba",
-            "city" => "Helsingborg"
+            "product_id" => 1,
+            "store_id" => 4
+        ],
+        [
+            "product_id" => 2,
+            "store_id" => 1
+        ],
+        [
+            "product_id" => 2,
+            "store_id" => 3
+        ],
+        [
+            "product_id" => 3,
+            "store_id" => 1
+        ],
+        [
+            "product_id" => 3,
+            "store_id" => 2
+        ],
+        [
+            "product_id" => 3,
+            "store_id" => 3
+        ],
+        [
+            "product_id" => 3,
+            "store_id" => 4
+        ],
+        [
+            "product_id" => 4,
+            "store_id" => 2
+        ],
+        [
+            "product_id" => 4,
+            "store_id" => 4
         ]
       ]);
     }

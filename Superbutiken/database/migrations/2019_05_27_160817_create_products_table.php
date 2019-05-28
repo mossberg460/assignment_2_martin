@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration {
             $table->text('brand');
             $table->text('image');
             $table->text('description');
-            $table->integer('price');
+            $table->bigInteger('price');
             $table->timestamps();
         });
     }

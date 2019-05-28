@@ -1,5 +1,5 @@
 <?php
-/*
+
 return [
   'default' => 'mysql',
   'migrations' => 'migrations',
@@ -16,4 +16,3 @@ return [
     ]
   ]
 ];
-*/

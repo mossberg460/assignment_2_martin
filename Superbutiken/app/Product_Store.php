@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Product_Store extends Model {
-  protected $table = 'product_stores';
+  protected $table = 'product_store'; //TODO: stort S?
 
   public function getProductsAttribute() {
     return $this->belongsTo('App\Product')->get();

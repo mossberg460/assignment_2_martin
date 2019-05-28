@@ -16,11 +16,12 @@ class ProductsController extends Controller {
     return response()->json($products);
   }
 
+  // TODO: product_storeS <--- S!!
   public function show($id) {
     $product = Product::find($id);
     $product->stores = DB::table('stores')
-    ->join('product_stores', 'stores.id', '=', 'product_stores.store_id')
-    ->where('product_stores.product_id', '=', $id)->get();
+    ->join('product_store', 'stores.id', '=', 'product_store.store_id')
+    ->where('product_store.product_id', '=', $id)->get();
 
     $product->reviews = Review::where('product_id', '=', $id)->get();
 
@@ -43,6 +44,6 @@ class ProductsController extends Controller {
       $product_Store->save();
     }
 
-    return response()->json(["Successful" => true]);
+    return response()->json(["success" => true]);
   }
 }
