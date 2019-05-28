@@ -1,0 +1,15 @@
+{
+    "name": "martin/assignment_2",
+    "description": "Composer file for assignment_2",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Mossberg460",
+            "email": "Martin.Mossberg@hotmail.com"
+        }
+    ],
+    "require": {
+        "laravel/lumen-installer": "^1.1",
+        "palanik/lumen-cors": "dev-master"
+    }
+}
